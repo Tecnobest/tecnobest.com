@@ -22,7 +22,7 @@
   }
 main {
   @include large12-columns;
-  background-color: #eee;
+  #background-color: #eee;
   }
 section {
   @extend .row;

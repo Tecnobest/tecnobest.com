@@ -11,7 +11,12 @@
     = csrf_meta_tags
   %body
     %header
+      -#%ul.button-group
+        %li.button English
+        %li.button Portuguese
       = render 'layouts/navigation'
+      %h1.logo.small-2 TecnoBest
     %main{:role => "main"}
       = render 'layouts/messages'
       = yield
+    %footer

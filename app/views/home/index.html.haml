@@ -1,4 +1,7 @@
-%h3 Home
-- @users.each do |user|
-  %p
-    User: #{link_to user.name, user}
+.row
+  %ul{"data-orbit" => ""}
+    %li= image_tag "http://placehold.it/1350x400/A92B48/fff"
+    %li= image_tag "http://placehold.it/1350x400/EE964D/fff"
+    %li= image_tag "http://placehold.it/1350x400/FDC43D/fff"
+    %li= image_tag "http://placehold.it/1350x400/DBB00A/fff"
+= render "description"

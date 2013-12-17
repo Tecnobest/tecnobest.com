@@ -1,11 +1,17 @@
 -# navigation styled for Zurb Foundation 4
 %nav.top-bar
   %ul.title-area
-    %li.name
-      = link_to 'Home', root_path
+    -#%li.name
+      = link_to 'Tecnobest', root_path
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         %span Menu
   .top-bar-section
-    %ul
-      = render 'layouts/navigation_links'
+    %ul.left
+      %li= link_to 'Home','/'
+      %li= link_to 'Services', services_path
+    %ul.right
+      -#= render 'layouts/navigation_links'
+      -#%ul.button-group
+      %li= link_to "English"
+      %li= link_to "Portuguese"
